@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutSection from "./component/aboutSection";
 import FeaturesSection from "./component/featuresSection";
+import FooterSection from "./component/footerSection";
 import GallerySection from "./component/gallerySection";
 import HeroSection from "./component/heroSection";
 import MenuSection from "./component/menuSection";
@@ -20,6 +21,7 @@ function App() {
         <GallerySection />
         <TestimonialsSection />
         <ReservationSection />
+        <FooterSection />
       </main>
     </>
   );
