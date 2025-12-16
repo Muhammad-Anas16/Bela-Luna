@@ -1,12 +1,12 @@
 import "./App.css";
-import AboutSection from "./component/About";
-import FeaturesSection from "./component/features";
-import GallerySection from "./component/gallery";
-import HeroSection from "./component/hero";
-import MenuSection from "./component/menu";
+import AboutSection from "./component/aboutSection";
+import FeaturesSection from "./component/featuresSection";
+import GallerySection from "./component/gallerySection";
+import HeroSection from "./component/heroSection";
+import MenuSection from "./component/menuSection";
 import Navbar from "./component/navbar";
-import ReservationSection from "./component/reservation";
-import TestimonialsSection from "./component/testimonial";
+import ReservationSection from "./component/reservationSection";
+import TestimonialsSection from "./component/testimonialSection";
 
 function App() {
   return (
