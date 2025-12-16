@@ -5,6 +5,7 @@ import GallerySection from "./component/gallery";
 import HeroSection from "./component/hero";
 import MenuSection from "./component/menu";
 import Navbar from "./component/navbar";
+import ReservationSection from "./component/reservation";
 import TestimonialsSection from "./component/testimonial";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <MenuSection />
         <GallerySection />
         <TestimonialsSection />
+        <ReservationSection />
       </main>
     </>
   );
