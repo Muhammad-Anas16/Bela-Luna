@@ -13,15 +13,34 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="">
-        <HeroSection />
-        <AboutSection />
+      <main>
+        <section id="home">
+          <HeroSection />
+        </section>
+
+        <section id="about">
+          <AboutSection />
+        </section>
+
         <FeaturesSection />
-        <MenuSection />
-        <GallerySection />
+
+        <section id="menu">
+          <MenuSection />
+        </section>
+
+        <section id="gallery">
+          <GallerySection />
+        </section>
+
         <TestimonialsSection />
-        <ReservationSection />
-        <FooterSection />
+
+        <section id="reservation">
+          <ReservationSection />
+        </section>
+
+        <section id="footer">
+          <FooterSection />
+        </section>
       </main>
     </>
   );
