@@ -38,11 +38,17 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-          <button onClick={() => scrollToSection("menu")} className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full bg-[#53D22D] border-2 border-[#53D22D] text-black text-sm sm:text-base font-medium transition hover:bg-[#47bb27]">
+          <button
+            onClick={() => scrollToSection("menu")}
+            className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full bg-[#53D22D] border-2 border-[#53D22D] text-black text-sm sm:text-base font-medium transition hover:bg-[#47bb27] cursor-pointer"
+          >
             View Menu
           </button>
 
-          <button onClick={() => scrollToSection("reservation")} className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full border-2 border-white text-white text-sm sm:text-base bg-[#454229]/80 backdrop-blur-md transition hover:bg-[#595741]">
+          <button
+            onClick={() => scrollToSection("reservation")}
+            className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full border-2 border-white text-white text-sm sm:text-base bg-[#454229]/80 backdrop-blur-md transition hover:bg-[#595741] cursor-pointer"
+          >
             Book a Table
           </button>
         </div>
