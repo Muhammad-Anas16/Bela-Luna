@@ -2,6 +2,13 @@ import React from "react";
 import { GoDotFill } from "react-icons/go";
 
 const HeroSection = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center bg-[url('/heroBackround.png')] bg-cover bg-center">
       {/* Overlay */}
@@ -31,11 +38,11 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-          <button className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full bg-[#53D22D] border-2 border-[#53D22D] text-black text-sm sm:text-base font-medium transition hover:bg-[#47bb27]">
+          <button onClick={() => scrollToSection("menu")} className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full bg-[#53D22D] border-2 border-[#53D22D] text-black text-sm sm:text-base font-medium transition hover:bg-[#47bb27]">
             View Menu
           </button>
 
-          <button className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full border-2 border-white text-white text-sm sm:text-base bg-[#454229]/80 backdrop-blur-md transition hover:bg-[#595741]">
+          <button onClick={() => scrollToSection("reservation")} className="w-full sm:w-auto px-7 sm:px-8 py-3 rounded-full border-2 border-white text-white text-sm sm:text-base bg-[#454229]/80 backdrop-blur-md transition hover:bg-[#595741]">
             Book a Table
           </button>
         </div>

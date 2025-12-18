@@ -121,14 +121,14 @@ const Navbar = () => {
             <li onClick={() => scrollToSection("about")} className="cursor-pointer hover:text-[#53D22D]">About</li>
             <li onClick={() => scrollToSection("menu")} className="cursor-pointer hover:text-[#53D22D]">Menu</li>
             <li onClick={() => scrollToSection("gallery")} className="cursor-pointer hover:text-[#53D22D]">Gallery</li>
-            <li onClick={() => scrollToSection("reservation")} className="cursor-pointer hover:text-[#53D22D]">Contact</li>
+            <li onClick={() => scrollToSection("footer")} className="cursor-pointer hover:text-[#53D22D]">Contact</li>
           </ul>
 
           {/* Right */}
           <div className="flex items-center gap-3">
             <button
               onClick={() => scrollToSection("reservation")}
-              className="rounded-full bg-[#53D22D] px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-black hover:bg-[#47bb27] transition"
+              className="rounded-full bg-[#53D22D] px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-black hover:bg-[#47bb27] transition cursor-pointer"
             >
               Book a Table
             </button>
@@ -150,7 +150,7 @@ const Navbar = () => {
               <li onClick={() => scrollToSection("about")} className="cursor-pointer rounded-md px-2 py-1.5 hover:bg-[#53D22D]">About</li>
               <li onClick={() => scrollToSection("menu")} className="cursor-pointer rounded-md px-2 py-1.5 hover:bg-[#53D22D]">Menu</li>
               <li onClick={() => scrollToSection("gallery")} className="cursor-pointer rounded-md px-2 py-1.5 hover:bg-[#53D22D]">Gallery</li>
-              <li onClick={() => scrollToSection("reservation")} className="cursor-pointer rounded-md px-2 py-1.5 hover:bg-[#53D22D]">Contact</li>
+              <li onClick={() => scrollToSection("footer")} className="cursor-pointer rounded-md px-2 py-1.5 hover:bg-[#53D22D]">Contact</li>
             </ul>
           </div>
         )}
